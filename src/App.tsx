@@ -159,7 +159,7 @@ function App() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://wa.me/573203418208?text=Hola%2C%20quiero%20solicitar%20información%20sobre%20la%20Fundación%20Luz%20de%20Vida"
+                href="https://wa.me/573103367911?text=Hola%2C%20quiero%20solicitar%20información%20sobre%20la%20Fundación%20Luz%20de%20Vida"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-[#BFA15A] text-white font-semibold rounded-lg hover:bg-[#d4b86a] transition-all hover:shadow-lg hover:shadow-[#BFA15A]/20 group"
@@ -382,12 +382,12 @@ function App() {
                   <div>
                     <h3 className="font-semibold mb-2 text-[#1A1A1A] dark:text-gray-100">WhatsApp</h3>
                     <a
-                      href="https://wa.me/573203418208"
+                      href="https://wa.me/573103367911"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#BFA15A] hover:text-[#d4b86a] transition-colors font-medium"
                     >
-                      +57 320 341 8208
+                      +57 310 336 7911
                     </a>
                   </div>
                 </div>
@@ -423,7 +423,7 @@ function App() {
                 Si deseas conocer más sobre nuestros programas educativos y cómo tu familia puede beneficiarse, escríbenos por WhatsApp. Estamos aquí para acompañarte en este importante proceso.
               </p>
               <a
-                href="https://wa.me/573203418208?text=Hola%2C%20quiero%20solicitar%20información%20sobre%20la%20Fundación%20Luz%20de%20Vida"
+                href="https://wa.me/573103367911?text=Hola%2C%20quiero%20solicitar%20información%20sobre%20la%20Fundación%20Luz%20de%20Vida"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-[#BFA15A] text-white font-semibold rounded-lg hover:bg-[#d4b86a] transition-all hover:shadow-lg hover:shadow-[#BFA15A]/20 group"
@@ -473,12 +473,12 @@ function App() {
                 <li className="flex items-start space-x-2">
                   <Phone size={16} className="mt-1 flex-shrink-0 text-[#BFA15A]" />
                   <a
-                    href="https://wa.me/573203418208"
+                    href="https://wa.me/573103367911"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-[#BFA15A] transition-colors"
                   >
-                    +57 320 341 8208
+                    +57 310 336 7911
                   </a>
                 </li>
                 <li className="flex items-start space-x-2">

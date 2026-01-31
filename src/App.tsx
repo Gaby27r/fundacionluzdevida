@@ -405,6 +405,7 @@ function App() {
                     <h3 className="font-semibold mb-2 text-[#1A1A1A] dark:text-gray-100">Ubicación</h3>
                     <p className="text-[#5F5F5F] dark:text-gray-400">
                       Calle 19 # 7-14<br />
+                      Piso 1<br />
                       Soacha, Cundinamarca<br />
                       Colombia
                     </p>
@@ -484,7 +485,9 @@ function App() {
                   <MapPin size={16} className="mt-1 flex-shrink-0 text-[#BFA15A]" />
                   <span>
                     Calle 19 # 7-14<br />
-                    Soacha, Cundinamarca
+                    Piso 1<br />
+                    Soacha, Cundinamarca<br />
+                    Colombia
                   </span>
                 </li>
               </ul>

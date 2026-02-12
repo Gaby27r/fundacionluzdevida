@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, BookOpen, Users, Heart, Target, Phone, MapPin, ChevronRight, Sun, Moon } from 'lucide-react';
+import { Menu, X, BookOpen, Users, Heart, Target, Phone, MapPin, ChevronRight, Sun, Moon, ExternalLink } from 'lucide-react';
 import iconoLogoClaro from './assets/logos/icono_sin_fondo_claro.png';
 import iconoLogoOscuro from './assets/logos/icono_sin_fondo_oscuro.png';
 
@@ -137,7 +137,7 @@ function App() {
       <main>
         <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-[#F7F6F3] to-white dark:from-[#121212] dark:via-[#1A1A1A] dark:to-[#121212]">
           <div className="relative max-w-5xl mx-auto text-center">
-            <div className="mb-12 flex justify-center">
+            <div className="mb-2 flex justify-center">
               <img
                 src={logoActual}
                 alt="Logo Fundación Luz de Vida"
@@ -148,6 +148,12 @@ function App() {
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-[#1A1A1A] dark:text-gray-100">
               Fundación <span className="text-[#BFA15A]">Luz de Vida</span>
             </h1>
+
+            <div className="mb-6 space-y-1 text-[#5F5F5F] dark:text-gray-400">
+              <p className="text-lg sm:text-xl font-semibold text-[#1A1A1A] dark:text-gray-100">NIT: 9003299113</p>
+              <p className="text-sm sm:text-base font-bold">Inscripción N° S0036006</p>
+              <p className="text-sm sm:text-base font-bold">21 de Diciembre de 2009</p>
+            </div>
 
             <p className="text-xl sm:text-2xl text-[#5F5F5F] dark:text-gray-400 mb-8 font-light leading-relaxed max-w-3xl mx-auto">
               Educando las nuevas generaciones para construir un mejor país
@@ -267,7 +273,7 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center p-8 bg-white dark:bg-gray-800 rounded-xl border border-[#E8E6E1] dark:border-gray-700">
-                <div className="text-5xl font-serif text-[#BFA15A] mb-3">5-20</div>
+                <div className="text-5xl font-serif text-[#BFA15A] mb-3">6 - 20 años</div>
                 <div className="text-lg font-semibold mb-2 text-[#1A1A1A] dark:text-gray-100">Rango de Edad</div>
                 <div className="text-[#5F5F5F] dark:text-gray-400">Niños y jóvenes en edad escolar y bachilleres</div>
               </div>
@@ -287,7 +293,7 @@ function App() {
 
             <div className="bg-white dark:bg-gray-800 p-8 sm:p-12 rounded-xl border border-[#E8E6E1] dark:border-gray-700">
               <p className="text-[#5F5F5F] dark:text-gray-400 leading-relaxed text-base sm:text-lg mb-6">
-                Nuestro enfoque está dirigido a <strong className="text-[#1A1A1A] dark:text-gray-100">estudiantes de colegios y bachilleres</strong> entre 5 y 20 años que buscan fortalecer su formación académica y acceder a oportunidades educativas de calidad.
+                Nuestro enfoque está dirigido a <strong className="text-[#1A1A1A] dark:text-gray-100">estudiantes de colegios y bachilleres</strong> entre 6 y 20 años que buscan fortalecer su formación académica y acceder a oportunidades educativas de calidad.
               </p>
               <p className="text-[#5F5F5F] leading-relaxed text-base sm:text-lg">
                 Trabajamos especialmente con <strong className="text-[#1A1A1A] dark:text-gray-100">comunidades y familias</strong> en Soacha que desean invertir en el futuro de sus hijos a través de la educación, brindándoles el acompañamiento y las herramientas necesarias para alcanzar sus metas.
@@ -381,14 +387,24 @@ function App() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2 text-[#1A1A1A] dark:text-gray-100">WhatsApp</h3>
-                    <a
-                      href="https://wa.me/573103367911"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#BFA15A] hover:text-[#d4b86a] transition-colors font-medium"
-                    >
-                      +57 310 336 7911
-                    </a>
+                    <div className="space-y-1">
+                      <a
+                        href="https://wa.me/573103367911"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-[#BFA15A] hover:text-[#d4b86a] transition-colors font-medium"
+                      >
+                        +57 310 336 7911
+                      </a>
+                      <a
+                        href="https://wa.me/573103350100"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-[#BFA15A] hover:text-[#d4b86a] transition-colors font-medium"
+                      >
+                        +57 310 335 0100
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <p className="text-[#5F5F5F] dark:text-gray-400 text-sm leading-relaxed">
@@ -403,18 +419,47 @@ function App() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2 text-[#1A1A1A] dark:text-gray-100">Ubicación</h3>
-                    <p className="text-[#5F5F5F] dark:text-gray-400">
-                      Calle 19 # 7-14<br />
-                      Piso 1<br />
+                    <p className="text-[#5F5F5F] dark:text-gray-400 mb-4">
+                      Calle 19 # 7-14 Piso 1<br />
                       Soacha, Cundinamarca<br />
                       Colombia
                     </p>
+                    <a
+                      href="https://maps.app.goo.gl/dpZxhVcATAs9qP1C6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-[#BFA15A] text-white text-sm font-medium rounded-lg hover:bg-[#d4b86a] transition-colors"
+                    >
+                      Cómo llegar
+                      <ExternalLink size={16} />
+                    </a>
                   </div>
                 </div>
                 <p className="text-[#5F5F5F] text-sm leading-relaxed">
                   Visítanos en nuestra sede en Soacha para conocer más sobre la fundación y nuestras actividades.
                 </p>
               </div>
+            </div>
+
+            <div className="mb-12 overflow-hidden rounded-xl border border-[#E8E6E1] dark:border-gray-700 shadow-lg max-w-2xl mx-auto">
+              <div className="h-64 sm:h-72 bg-[#E8E6E1] dark:bg-gray-800">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.033986523388!2d-74.21408579999999!3d4.582888299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fe5d9d81235%3A0xdbbba4b78fe2ac0e!2sFundaci%C3%B3n%20Luz%20de%20Vida%20Soacha!5e1!3m2!1ses!2sco!4v1770932823510!5m2!1ses!2sco"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación Fundación Luz de Vida"
+                />
+              </div>
+              <a
+                href="https://maps.app.goo.gl/dpZxhVcATAs9qP1C6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 py-3 bg-[#F7F6F3] dark:bg-gray-800 text-[#BFA15A] hover:bg-[#EFE6D3] dark:hover:bg-gray-700 transition-colors text-sm font-medium"
+              >
+                Abrir en Google Maps
+                <ExternalLink size={16} />
+              </a>
             </div>
 
             <div className="bg-[#F7F6F3] dark:bg-gray-800/50 p-8 sm:p-12 rounded-xl border border-[#E8E6E1] dark:border-gray-700 text-center">
@@ -482,10 +527,31 @@ function App() {
                   </a>
                 </li>
                 <li className="flex items-start space-x-2">
+                  <Phone size={16} className="mt-1 flex-shrink-0 text-[#BFA15A]" />
+                  <a
+                    href="https://wa.me/573103350100"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#BFA15A] transition-colors"
+                  >
+                    +57 310 335 0100
+                  </a>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <Phone size={16} className="mt-1 flex-shrink-0 text-[#BFA15A]" />
+                  <a
+                    href="https://wa.me/573171622489"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#BFA15A] transition-colors"
+                  >
+                    +57 317 162 2489
+                  </a>
+                </li>
+                <li className="flex items-start space-x-2">
                   <MapPin size={16} className="mt-1 flex-shrink-0 text-[#BFA15A]" />
                   <span>
-                    Calle 19 # 7-14<br />
-                    Piso 1<br />
+                    Calle 19 # 7-14 Piso 1<br />
                     Soacha, Cundinamarca<br />
                     Colombia
                   </span>
